@@ -20,6 +20,7 @@ import mapValues from 'lodash/mapValues';
 import compact from 'lodash/compact';
 
 import type { QueryId } from 'views/logic/queries/Query';
+import type Query from 'views/logic/queries/Query';
 import type { SearchTypeId } from 'views/logic/SearchType';
 
 import QueryResult from './QueryResult';
@@ -87,6 +88,7 @@ class SearchResult {
 
   updateSearchTypes(searchTypeResults) {
     const updatedResult = this.result;
+    console.log(updatedResult);
 
     searchTypeResults.forEach((searchTypeResult: { id: string; }) => {
       const searchQuery = this._getQueryBySearchTypeId(searchTypeResult.id);

@@ -21,6 +21,7 @@ import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 import Reflux from 'reflux';
 import { PluginManifest, PluginStore } from 'graylog-web-plugin/plugin';
+import Plotly from 'plotly.js/lib/core';
 
 import AppFacade from 'routing/AppFacade';
 import ViewsBindings from 'views/bindings';
